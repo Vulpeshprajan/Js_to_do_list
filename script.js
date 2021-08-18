@@ -159,13 +159,13 @@ totalBadHours();
 
 
 
-    const totalTaskHours = () => {
+    // const totalTaskHours = () => {
 
-        const total = taskLists.reduce ((subttl, item ) => ( subttl += +item.hr), 0 )
+    //     const total = taskLists.reduce ((subttl, item ) => ( subttl += +item.hr), 0 )
 
-        document.getElementById("totalHrs").innerText = total;
+    //     document.getElementById("totalHrs").innerText = total;
 
-    }
+    // }
 
 
 
