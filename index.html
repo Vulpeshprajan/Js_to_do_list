@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css" />
+    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>To do list</title>
+  </head>
+  <body>
+    <div style = "width: 700px;"class="container">
+      <div class="cover-img">
+        <h1>To-do-List </h1>
+      </div>
+
+      <div class="content" >
+        <!--======Add item  =====-->
+        <form
+          action="javascript:void(0)"
+          class="add"
+          onsubmit="handleOnSubmit(this)"
+        >
+        <input class= "field bg-light" 
+        type="text"
+        name="add"
+        value=""
+        placeholder="Add items"
+        required
+        />
+        <input class= "field bg-light" 
+        type="number"
+        name="hr"
+        value=""
+        placeholder="add hours"
+        required
+        />
+         
+        <div class="input-buttons ">
+          <a href="#" class="add-todo">
+            <button class="btn-sm bg-primary"><i class="fas fa-plus"></i></button>
+          </a>
+        </div>
+      </form>
+      </div>
+      <section class="task-sections"> 
+          <div class="col">
+
+      
+        <div class="to-do">
+          
+          <h3 >Tasks Lists</h3>
+          <ul id="todo">
+      
+       
+          </ul>
+          <hr/>
+          Total hrs allocated = <span id="totalHrs"></span> hr/w
+          </div>
+          </div>
+
+     
+
+
+
+<div class="col">
+            <div class="not-to-do">
+          <h3>Not to do list</h3>
+          <ul id = "ntd">
+       
+           
+          </ul>
+          <hr />
+
+         
+          Total hours saved = <span id="totalBadHrs"></span> hr/w
+          </div>
+        </div>
+</div>
+
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

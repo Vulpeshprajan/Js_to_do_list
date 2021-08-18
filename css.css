@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 450px;
+  height: 700px;
+  margin: 0;
+  background: linear-gradient(90deg, red, blue);
+  color: rgb(0, 0, 0);
+  font-family: sans-serif;
+}
+
+.task-sections,
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.cover-img  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;  
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 15px 20px rgb(0, 0, 0);
+}
+
+.button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.field {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 20px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgb(0, 0, 0);
+
+}
+
+.cover-img {
+  background-image: url("h.jpg");
+  height: 200px;
+  background-size: cover;
+  background-position: 10%, 20%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.to-do,
+.not-to-do {
+  min-width: 10%;
+}
+.content {
+  padding: 10px 20px;
+}
+
+.content form {
+  display: flex;
+
+
+  /* justify-content: space-between; */
+  /* margin-bottom: 30px; */
+  padding: 0 10px 0 5px;
+  /* border-bottom: 5px solid #8e979c; */
+}
+
+/* .content form > * {
+  background: transparent;
+  border: solid;
+  height: 35px;
+  
+} */
+
+ul {
+  list-style-type: none;
+  margin-left: 10px;
+  padding: 0;
+  letter-spacing: none;
+}
+
+li {
+  margin-bottom: 10px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+
+.btn-sm {
+  color: white;
+ 
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+button{
+  color: white;
+ 
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+li > i {
+  color: red;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+
